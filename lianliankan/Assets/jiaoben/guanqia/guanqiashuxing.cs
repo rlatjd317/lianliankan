@@ -47,6 +47,9 @@ public class guanqiashuxing : MonoBehaviour
     }
     public void dianjianniu()
     {
-        SceneManager.LoadScene(transform.name);
+        if (transform.Find("suo").localScale.x == 0)
+        {
+            SceneManager.LoadScene(transform.name);
+        }
     }
 }
